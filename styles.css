@@ -1,0 +1,120 @@
+/* Global styles (GALLERY SECTION) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* FULL PAGE SECTION */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header styles (PHOTOGRAPHY SECTION) */
+header {
+    background-color: #0c0b0b;
+    color: #f7f709;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* SS PHOTOGRAPHY FONT SIZE */
+header h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+/* Main section styles (GALLERY SECTION) */
+main {
+    padding: 50px 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* Global styles (GALLERY SECTION FONT SIZE) */
+h2 {
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: #0ea88a;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #edbe84;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #ffffff;
+}
+
+#uploadInput {
+    display: none;
+}
+
+.photos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos-container img {
+    max-width: 200px;
+    margin: 0 10px 10px 0;
+    border: 0px solid transparent; /* Add border for transition effect */
+    transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+/* Footer styles */
+footer {
+    background-color: #100a0a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#indian-time {
+    color: #69d0f3; /* Indian time color */
+    font-size: 18px;
+    margin-top: 10px;
+    transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+/* Add styles for new buttons (DELETE BUTTON and HEADER BUTTONS) */
+.btn {
+    padding: 11px 20px;
+    background-color: #07090a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Global styles (DELETE BUTTON and HEADER BUTTONS BACKGROUND COLOR) */
+.btn:hover {
+    background-color: #245557;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Ewb9BZljqWvhCD2yobB0V9DCwKJx4bZtOtmKTP1T4iqc8ysH8eN+zG88MaJAC12xjVY5EK2+fivMFdFQL4JSbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <h1>SS Photography</h1>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><button id="HOME-btn" class="btn">Home</button></li>
+                <li><button id="PORTFOLIO-btn" class="btn">Portfolio</button></li>
+                <li><button id="BLOGS-btn" class="btn">Blog</button></li>
+                <li><button id="GEARS-btn" class="btn">Gears</button></li>
+                <li><button id="ABOUT-btn" class="btn">About</button></li>
+                <li><button id="CONTACT-btn" class="btn">Contact</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Body Section -->
+<main>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <hr>
+            <!-- Placeholder for uploaded photos -->
+            <div id="uploadedPhotos" class="photos-container"></div>
+            <!-- Button to upload photos -->
+            <label for="uploadInput" class="upload-btn">
+                <i class="fas fa-upload"></i> Upload Photos
+            </label>
+            <input type="file" id="uploadInput" accept="image/*" multiple>
+            <!-- Button to delete photos -->
+            <button id="delete-btn" class="btn">Delete</button>
+        </div>
+    </section>
+
+    <!-- Display paragraph -->
+    <div id="homeContent" style="display: none;">
+        <hr>
+        <p style="font-size: 20px; color: rgb(0, 0, 0); font-family: Georgia, serif; text-align: center;">Welcome to My Photography!... Here, we specialize in capturing unforgettable moments and preserving them for eternity. This section is your entry point to a captivating world of visual storytelling and creative expression. From stunning landscapes to personal portraits, we encourage you to discover the endless charm of photography portrayed in each picture. Whether you're just starting out or have years of experience, our carefully curated collection of images and articles is here to spark your enthusiasm and deepen your understanding of the craft. Come along on a journey where every snapshot unveils a fresh angle, and each photograph narrates its own story. Welcome to the enchanting realm of  SS PHOTOGRAPHY!</p>
+    </div>
+
+    <!-- Display paragraph -->
+    <div id="portfolioContent" style="display: none;">
+        <hr>
+        <p style="font-size: 20px; color: rgb(0, 0, 0); font-family: Georgia, serif; text-align: center;">This will showcase our portfolio of work. We proudly present a curated selection of our finest photographs, capturing moments both grand and intimate. From captivating landscapes to heartfelt portraits, our portfolio reflects our dedication to the craft and our commitment to excellence. Each image tells a story, inviting you to immerse yourself in the beauty and emotion captured through our lens. Whether you're seeking inspiration or considering our services, we invite you to explore our portfolio and witness the power of visual storytelling.</p>
+    </div>
+
+    <!-- Display paragraph -->
+    <div id="blogsContent" style="display: none;">
+        <hr>
+        <p style="font-size: 20px; color: rgb(0, 0, 0); font-family: Georgia, serif; text-align: center;">In this Website's Blog Section, where we share insights, tips, and stories from the world of photography. Here, you'll find a wealth of articles covering various aspects of the craft, from technical tutorials to behind-the-scenes glimpses of our work. Whether you're a beginner looking to improve your skills or a seasoned professional seeking inspiration, our blog is a valuable resource for all photography enthusiasts. Join us as we delve into the art and technique of capturing moments, one blog post at a time.</p>
+    </div>
+
+    <!-- Display paragraph -->
+    <div id="gearsContent" style="display: none;">
+        <hr>
+        <p style="font-size: 20px; color: rgb(0, 0, 0); font-family: Georgia, serif; text-align: center;">In this Website's Gears Section of our photography website, where we provide comprehensive information about the equipment we use and recommend. From cameras and lenses to tripods and accessories, we aim to help photographers make informed decisions about their gear choices. Our reviews, guides, and comparisons are designed to simplify the process of selecting the right tools for your photography needs. Whether you're a beginner exploring your first camera purchase or an experienced professional looking to upgrade your equipment, our gears section is your go-to resource for reliable advice and recommendations. Explore our curated selection and elevate your photography experience today.</p>
+    </div>
+
+    <!-- Display paragraph -->
+    <div id="aboutContent" style="display: none;">
+        <hr>
+        <p style="font-size: 20px; color: rgb(0, 0, 0); font-family: Georgia, serif; text-align: center;">In this Website's About section of our photography website, where we introduce ourselves and our mission. We are a team of passionate photographers dedicated to capturing life's most precious moments with artistry and skill. Our goal is to provide clients with stunning imagery that speaks volumes and preserves memories for generations to come. With years of experience in the industry, we pride ourselves on our professionalism, creativity, and commitment to excellence. Get to know us better as we share our story, values, and vision for the future of photography. Welcome to our world of creativity and inspiration.</p>
+    </div>
+
+    <!-- Display paragraph -->
+    <div id="contactContent" style="display: none;">
+        <hr>
+        <p style="font-size: 20px; color: rgb(0, 0, 0); font-family: Georgia, serif; text-align: center;">In this Website's Contact section of our photography website, where connecting with us is just a click away. Whether you're interested in scheduling a photo shoot, have questions about our services, or simply want to say hello, we're here to help. Feel free to reach out to us via email at <a href="mailto:ssvlogs0729@gmail.com"><b>ssvlogs0729@gmail.com</b></a>, or give us a call at <a href="tel:7901233045"><b>7901233045</b></a>. You can also connect with us on Instagram at <a href="https://www.instagram.com/saathwik_290798/"><b>@saathwik_290798</b></a>. We value every inquiry and look forward to hearing from you. Let's start a conversation and turn your photography dreams into reality.</p>
+    </div>
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> SS Photography. All rights reserved.</p>
+        <p id="indian-time" style="opacity: 5;"></p> <!-- Display Indian time here -->
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
